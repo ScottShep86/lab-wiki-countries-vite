@@ -9,11 +9,6 @@ export default function CountryDetails({ countriesData }) {
     return singleCountry.alpha3Code === id;
   })[0];
 
-  /* const borderCode = clickedCountry.borders.map((eachBorder) => {
-    return (eachBorder)
-
-  }) */
-
   const borderInfo = countriesData.filter((eachCountry) => {
     return (clickedCountry.borders.includes(eachCountry.alpha3Code))
   })
